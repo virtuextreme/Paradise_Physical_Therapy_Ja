@@ -9,16 +9,17 @@
         }
         
         // function to insert a new record into the attendee database
-        public function insertAttendees($fname, $lname, $dob, $email,$contact,$specialty,$avatar_path){
+        public function insertAttendees($fname, $lname, $dob, $address, $email,$contact,$specialty,$avatar_path){
             try {
                 // define sql statement to be executed
-                $sql = "INSERT INTO attendee (firstname,lastname,dateofbirth,emailaddress,contactnumber,specialty_id,avatar_path) VALUES (:fname,:lname,:dob,:email,:contact,:specialty,:avatar_path)";
+                $sql = "INSERT INTO attendee (firstname,lastname,dateofbirth,address,emailaddress,contactnumber,specialty_id,avatar_path) VALUES (:fname,:lname,:dob,:address,:email,:contact,:specialty,:avatar_path)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
                 $stmt->bindparam(':fname',$fname);
                 $stmt->bindparam(':lname',$lname);
                 $stmt->bindparam(':dob',$dob);
+                $stmt->bindparam(':address',$address);
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':contact',$contact);
                 $stmt->bindparam(':specialty',$specialty);
@@ -36,13 +37,14 @@
 
         public function editAttendee($id,$fname, $lname, $dob, $email,$contact,$specialty){
            try{ 
-                $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id ";
+                $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`address`=:address,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id ";
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
                 $stmt->bindparam(':id',$id);
                 $stmt->bindparam(':fname',$fname);
                 $stmt->bindparam(':lname',$lname);
                 $stmt->bindparam(':dob',$dob);
+                $stmt->bindparam(':address',$address);
                 $stmt->bindparam(':email',$email);
                 $stmt->bindparam(':contact',$contact);
                 $stmt->bindparam(':specialty',$specialty);

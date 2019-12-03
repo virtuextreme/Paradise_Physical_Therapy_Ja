@@ -39,7 +39,7 @@
             <input type="text" class="form-control" value="<?php echo $attendee['dateofbirth'] ?>" id="dob" name="dob">
         </div>
         <div class="form-group">
-            <label for="specialty">Area of Expertise</label>
+            <label for="specialty">Gender</label>
             <select class="form-control" id="specialty" name="specialty">
                 <?php while($r = $results->fetch(PDO::FETCH_ASSOC)) {?>
                    <option value="<?php echo $r['specialty_id'] ?>" <?php if($r['specialty_id'] == $attendee['specialty_id']) echo 'selected' ?>>
@@ -47,6 +47,10 @@
                    </option>
                 <?php }?>
             </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" value="<?php echo $attendee['address'] ?>" id="address" name="address">
         </div>
         <div class="form-group">
             <label for="email">Email address</label>

@@ -7,12 +7,13 @@
         $fname = $_POST['firstname'];
         $lname = $_POST['lastname'];
         $dob = $_POST['dob'];
+        $address = $_POST['address'];
         $email = $_POST['email'];
         $contact = $_POST['phone'];
         $specialty = $_POST['specialty'];
 
         //Call Crud function
-        $result = $crud->editAttendee($id,$fname, $lname, $dob, $email,$contact,$specialty);
+        $result = $crud->editAttendee($id,$fname, $lname, $dob, $address, $email,$contact,$specialty);
         // Redirect to index.php
         if($result){
             header("Location: viewrecords.php");

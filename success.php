@@ -9,9 +9,11 @@
         $fname = $_POST['firstname'];
         $lname = $_POST['lastname'];
         $dob = $_POST['dob'];
+        $address = $_POST['address'];
         $email = $_POST['email'];
         $contact = $_POST['phone'];
         $specialty = $_POST['specialty'];
+        //$avatar = $_POST['avatar'];
 
         $orig_file = $_FILES["avatar"]["tmp_name"];
         $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
@@ -20,7 +22,7 @@
         move_uploaded_file($orig_file,$destination);
 
         //Call function to insert and track if success or not
-        $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $email,$contact,$specialty,$destination);
+        $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $address, $email,$contact,$specialty,$destination);
         $specialtyName = $crud->getSpecialtyById($specialty);
         
         if($isSuccess){
@@ -70,7 +72,10 @@
                 Date Of Birth: <?php echo $_POST['dob'];  ?>
             </p>
             <p class="card-text">
-                Email Adress: <?php echo $_POST['email'];  ?>
+                Address: <?php echo $_POST['address'];  ?>
+            </p>
+            <p class="card-text">
+                Email Address: <?php echo $_POST['email'];  ?>
             </p>
             <p class="card-text">
                 Contact Number: <?php echo $_POST['phone'];  ?>

@@ -29,7 +29,10 @@
             Date Of Birth: <?php echo $result['dateofbirth'];  ?>
         </p>
         <p class="card-text">
-            Email Adress: <?php echo $result['emailaddress'];  ?>
+            Address: <?php echo $result['address'];  ?>
+        </p>
+        <p class="card-text">
+            Email Address: <?php echo $result['emailaddress'];  ?>
         </p>
         <p class="card-text">
             Contact Number: <?php echo $result['contactnumber'];  ?>
