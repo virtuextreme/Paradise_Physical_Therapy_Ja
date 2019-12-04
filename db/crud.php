@@ -35,7 +35,7 @@
             }
         }
 
-        public function editAttendee($id,$fname, $lname, $dob, $email,$contact,$specialty){
+        public function editAttendee($id,$fname, $lname, $dob, $address, $email,$contact,$specialty){
            try{ 
                 $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`address`=:address,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id ";
                 $stmt = $this->db->prepare($sql);
