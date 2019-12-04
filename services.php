@@ -6,4 +6,45 @@
 
 ?>
 
-<p class="text-primary font-weight-bold ">Paradise Physical Therapy Jamaica offers a wide range of products such as ... </p>
+<p class="text-primary font-weight-bold ">
+CONDITIONS WE TREAT
+The physiotherapists at Paradise Physiotherapy are focused on staying current with their practice and have completed further training in many specific areas.
+
+Some of the most common conditions we treat are:
+
+ Muscle strains
+ Ligament sprains
+ Tendonitis and tendonopathy
+ Bursitis
+ Post fracture
+ Disc injuries
+ Arthritis
+
+ TMJ dysfunction
+
+ Running injuries
+
+ Motor vehicle accidents
+
+ Workplace injuries
+
+ Back and neck pain
+
+ Chronic pain
+
+ Sports injuries
+
+ Headaches
+
+ Plantar fasciitis
+
+ SI joint dysfunction
+
+ Pregnancy related pain
+
+ Women’s health issues (urinary incontinence)
+
+ Men and women's urinary incontinence
+
+ Concussions
+ </p>
