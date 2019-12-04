@@ -27,7 +27,7 @@ include_once 'includes/session.php'?>
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link active" href="index.php"><p class = font-weight-bold>Home </p><span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="ourteam.php"><p class = font-weight-bold>Our Team</p></a>
-          <a class="nav-item nav-link" href="compression.php"><p class = font-weight-bold>compression</p></a>
+          <a class="nav-item nav-link" href="compression.php"><p class = font-weight-bold>Compression Stocking</p></a>
           <a class="nav-item nav-link" href="services.php"><p class = font-weight-bold>Services</p></a>
           <a class="nav-item nav-link" href="aboutus.php"><p class = font-weight-bold>About Us</p></a>
           <a class="nav-item nav-link" href="viewrecords.php"><p class = font-weight-bold>View Patient's Record</p></a>
