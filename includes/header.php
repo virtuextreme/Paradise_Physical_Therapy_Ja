@@ -35,7 +35,7 @@ include_once 'includes/session.php'?>
               if(!isset($_SESSION['userid'])){
           ?>
             <a class="nav-item nav-link" href="login.php"><p class = font-weight-bold>Login</p> <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="registration.php"><p class = font-weight-bold>Register</p> <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="Registration.php"><p class = font-weight-bold>Register</p> <span class="sr-only">(current)</span></a>
           <?php } else { ?>
             <a class="nav-item nav-link" href="#"><span><p class = font-weight-bold>Hello </p>  <p class = font-weight-bold><?php echo $_SESSION['username'] ?>!</p> </span> <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="logout.php"><p class = font-weight-bold>  Logout </p><span class="sr-only">(current)</span></a>
