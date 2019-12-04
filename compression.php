@@ -5,7 +5,7 @@
     $result = $crud->getSpecialties();
 
 ?>
-<p>
+<p class="text-primary font-weight-bold ">
 <h1>COMPRESSION HOSIERY</h1>
 <h2>Medical grade compression garments help many patients effectively improve on the venous and lymphatic blood flow of the lower extremities
  and are used to prevent and treat poor circulation. Compression garments help relieve and 
