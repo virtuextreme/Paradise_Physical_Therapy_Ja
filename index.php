@@ -49,7 +49,7 @@ include_once 'includes/session.php'; ?>
         <?php 
               if(!isset($_SESSION['userid'])){
           ?>
-            <a class="btn btn-secondary action-button" role="button" href="Login.php">Login</a>
+            <a class="btn btn-secondary action-button" role="button" href="login.php">Login</a>
             <a class="btn btn-light action-button" role="button" href="Registration.php">Register</a>
           <?php } else { ?>
             <a class="nav-item nav-link" href="#"><span><p class = font-weight-bold><font color="white">Hello</font> </p>  <p class = font-weight-bold><font color="white"><?php echo $_SESSION['username'] ?>!</font></p> </span> <span class="sr-only">(current)</span></a>
