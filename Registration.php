@@ -18,7 +18,7 @@
      -->
     <h1 class="text-center"><font color="white">Paradise Pysical Therapy Registration form</font></h1>
 
-    <form method="post" action="Success.php" enctype="multipart/form-data">
+    <form method="post" action="success.php" enctype="multipart/form-data">
         <div class="form-group">
             <label for="firstname"> <font color="white">First Name</font></label>
             <input required type="text" class="form-control" id="firstname" name="firstname">
