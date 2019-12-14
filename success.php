@@ -59,7 +59,7 @@
     </div> -->
 
     <!-- This prints out values that were passed to the action page using method="post" -->
-    <img src="<?php echo $destination; ?>" class="rounded-circle" style="width: 20%; height: 20%" />
+    <img src="<?php echo $destination; ?>" class="rounded-circle" style="width: 25%; height: 40%" />
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">

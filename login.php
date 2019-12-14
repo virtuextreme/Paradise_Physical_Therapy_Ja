@@ -22,23 +22,23 @@
     }
 ?>
 
-<h1 class="text-center"><?php echo $title ?> </h1>
+<h1 class="text-center"><font color="white"><?php echo $title ?> </h1>
    
     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
         <table class="table table-sm">
             <tr>
-                <td><label for="username">Username: * </label></td>
+                <td><label for="username"><font color="white">Username: *</font> </label></td>
                 <td><input type="text" name="username" class="form-control" id="username" value="<?php if($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>">
                 </td>
             </tr>
             <tr>
-                <td><label for="password">Password: * </label></td>
+                <td><label for="password"><font color="white">Password: *</font> </label></td>
                 <td><input type="password" name="password" class="form-control" id="password">
                 </td>
             </tr>
         </table><br/><br/>
         <input type="submit" value="Login" class="btn btn-primary btn-block"><br/>
-        <a href="#"> Forgot Password </a>
+        <a href="#"> <font color="white">Forgot Password</font> </a>
             
     </form><br/><br/><br/><br/>
 
