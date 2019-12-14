@@ -13,7 +13,7 @@
 <h1 class="section-heading mb-7"><span class="section-heading-upper"><font color="blue">Comprehensive</font></span><span class="section-heading-lower"><font color="blue">CARE</font></span></h1>
                     <p class="mb-3"><font color="blue">Our comprehensive care is administered by leading expert therapists to conveniently serve our patients. 
 Combined with flexible appointment schedules and the ability to provide the ease and access needed to ensure our patient’s success. 
-At <b>Paradise Physical Therapy Jamaica</b> we help our patients each day to live better, work smarter and play harder.</font></p>
+<br>At <b>Paradise Physical Therapy Jamaica</b> we help our patients each day to live better, work smarter and play harder.</font></p>
 </div>
 </div>
 </section>
